@@ -5,13 +5,11 @@
 body {
   font-family: "Roboto", sans-serif;
 }
-
 .navbar {
   width: 100%;
   height: 50px;
-  background-color: black;
-  position: sticky;
-  top: 0;
+  background-color: #000;
+  font-family: "Sen", sans-serif;
 }
 
 .navbar-container {
@@ -19,8 +17,7 @@ body {
   align-items: center;
   padding: 0 50px;
   height: 100%;
-  color: white;
-  font-family: "Sen", sans-serif;
+  color: #fff;
 }
 
 .logo-container {
@@ -28,6 +25,7 @@ body {
 }
 
 .logo {
+  font-family: "Sen", sans-serif;
   font-size: 30px;
   color: #4dbf00;
 }
@@ -48,15 +46,12 @@ body {
 .menu-list-item.active {
   font-weight: bold;
 }
+
 .profile-container {
   flex: 2;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-}
-
-.profile-text-container {
-  margin: 0 20px;
 }
 
 .profile-picture {
@@ -66,14 +61,18 @@ body {
   object-fit: cover;
 }
 
+.profile-text-container {
+  margin: 0 20px;
+}
+
 .toggle {
   width: 40px;
   height: 20px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 30px;
   display: flex;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
   position: relative;
 }
 
@@ -84,12 +83,11 @@ body {
 .toggle-ball {
   width: 18px;
   height: 18px;
-  background-color: black;
+  background-color: #000;
   position: absolute;
   right: 1px;
   border-radius: 50%;
   cursor: pointer;
-  transition: 1s ease all;
 }
 
 .sidebar {
@@ -100,12 +98,12 @@ body {
   top: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding-top: 60px;
+  align-items: center;
 }
 
 .left-menu-icon {
-  color: white;
+  color: #fff;
   font-size: 20px;
   margin-bottom: 40px;
 }
@@ -113,7 +111,7 @@ body {
 .container {
   background-color: #151515;
   min-height: calc(100vh - 50px);
-  color: white;
+  color: #fff;
 }
 
 .content-container {
@@ -137,19 +135,20 @@ body {
 
 .featured-button {
   background-color: #4dbf00;
-  color: white;
+  color: #fff;
   padding: 10px 20px;
   border-radius: 10px;
   border: none;
   outline: none;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .movie-list-container {
   padding: 0 20px;
 }
 
-.movie-list-wrapper {
+.movie-list-wrapper{
   position: relative;
   overflow: hidden;
 }
@@ -159,7 +158,7 @@ body {
   align-items: center;
   height: 300px;
   transform: translateX(0);
-  transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out
 }
 
 .movie-list-item {
@@ -173,14 +172,14 @@ body {
   opacity: 0.5;
 }
 
-.movie-list-item:hover .movie-list-item-title,
-.movie-list-item:hover .movie-list-item-desc,
+.movie-list-item:hover .movie-list-item-title, 
+.movie-list-item:hover .movie-list-item-desc, 
 .movie-list-item:hover .movie-list-item-button {
   opacity: 1;
 }
 
 .movie-list-item-img {
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
   width: 270px;
   height: 200px;
   object-fit: cover;
@@ -206,15 +205,14 @@ body {
   position: absolute;
   top: 30%;
   left: 50px;
-  width: 230px;
+  width: 190px;
   opacity: 0;
   transition: 1s all ease-in-out;
 }
-
 .movie-list-item-button {
   padding: 10px;
   background-color: #4dbf00;
-  color: white;
+  color: #fff;
   border-radius: 10px;
   outline: none;
   border: none;
@@ -226,49 +224,19 @@ body {
   transition: 1s all ease-in-out;
 }
 
-.arrow {
+.arrow{
   font-size: 120px;
   position: absolute;
   top: 90px;
   right: 0;
   color: lightgray;
   opacity: 0.5;
-  cursor: pointer;
+cursor: pointer;
 }
 
-.container.active {
-  background-color: white;
-}
-
-.movie-list-title.active {
-  color: black;
-}
-
-.navbar-container.active {
-  background-color: white;
-
-  color: black;
-}
-
-.sidebar.active{
-    background-color: white;
-}
-
-.left-menu-icon.active{
-    color: black;
-}
-
-.toggle.active{
-    background-color: black;
-}
-
-.toggle-ball.active{
-    background-color: white;
-    transform: translateX(-20px);
-}
 
 @media only screen and (max-width: 940px){
-    .menu-container{
-        display: none;
-    }
+  .menu-container{
+    display: none;
+  }
 }
